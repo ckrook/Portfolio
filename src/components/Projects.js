@@ -53,7 +53,7 @@ function Projects() {
                     {p.description}
                   </span>
                 </div>
-                <div className="flex flex-wrap md:gap-4 lg:gap-6 xl:gap-8 gap-4 gap-y-3 ">
+                <div className="flex flex-wrap md:gap-2 lg:gap-3 xl:gap-4 gap-2 gap-y-3 ">
                   {p.badge.map((b) => {
                     const classes = "badge-";
                     return <span className={classes}>{b}</span>;

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="text-center">
       <div className="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-lg mx-auto space-y-6">
           <div className="flex justify-center space-x-6">
             <a
               className="text-blue-500 hover:text-opacity-75"
@@ -71,12 +71,7 @@ function Footer() {
           </div>
 
           <nav className="grid grid-cols-2 gap-4 p-6 text-sm font-medium bg-gray-900 rounded-lg sm:grid-cols-3 lg:grid-cols-4">
-            <a
-              className="hover:opacity-75"
-              href="https://www.linkedin.com/in/charleskrook/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="hover:opacity-75" href="/" rel="noreferrer">
               Home
             </a>
             <a className="hover:opacity-75" href="/about">
