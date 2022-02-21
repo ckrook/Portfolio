@@ -70,7 +70,7 @@ function Footer() {
             </a>
           </div>
 
-          <nav className="grid grid-cols-2 gap-4 p-6 text-sm font-medium bg-gray-900 rounded-lg sm:grid-cols-3 lg:grid-cols-5">
+          <nav className="grid grid-cols-2 gap-4 p-6 text-sm font-medium bg-gray-900 rounded-lg sm:grid-cols-3 lg:grid-cols-4">
             <a
               className="hover:opacity-75"
               href="https://www.linkedin.com/in/charleskrook/"
@@ -82,14 +82,7 @@ function Footer() {
             <a className="hover:opacity-75" href="/about">
               About
             </a>
-            <a
-              className="hover:opacity-75"
-              href="https://github.com/ckrook"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
+
             <a
               className="hover:opacity-75"
               href="https://www.linkedin.com/in/charleskrook/"

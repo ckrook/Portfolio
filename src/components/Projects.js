@@ -70,7 +70,9 @@ function Projects() {
                   >
                     Live site
                   </a>
-                  <HiExternalLink className="hidden sm:block w-7 h-7 md:w-6 md:h-6" />
+                  <a href={p.live} target="_blank" rel="noreferrer">
+                    <HiExternalLink className="hidden sm:block w-7 h-7 md:w-6 md:h-6" />
+                  </a>
                 </div>
                 <div className="flex justify-end md:items-center">
                   <a
@@ -81,7 +83,9 @@ function Projects() {
                   >
                     Github repo
                   </a>
-                  <GoMarkGithub className="w-7 h-7 md:w-6 md:h-6" />
+                  <a href={p.repo} target="_blank" rel="noreferrer">
+                    <GoMarkGithub className="w-7 h-7 md:w-6 md:h-6" />
+                  </a>
                 </div>
               </div>
             </div>
