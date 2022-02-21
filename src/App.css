@@ -7,18 +7,18 @@
 h1 {
 }
 h2 {
-  @apply text-lg;
+  @apply text-2xl;
 }
 
 body {
-  @apply bg-slate-900 text-white;
+  @apply bg-gray-900 text-white text-xl;
 }
 .wrap {
-  @apply w-1/2 m-auto;
+  @apply w-[95%] sm:w-[90%] md:w-[75%] md:max-w-6xl m-auto;
 }
 
 header {
-  @apply text-center my-6;
+  @apply text-center my-10;
 }
 
 .header__logo {
@@ -30,11 +30,45 @@ header {
 }
 
 .project__img {
-  @apply rounded-2xl mb-4 flex justify-center;
+  @apply bg-black p-8 rounded-2xl flex mb-8 justify-center;
 }
 
 /* SKILL CARDS */
 
 .skill--card {
   @apply bg-slate-700 rounded-3xl p-2;
+}
+
+/* BADGES */
+
+[class^="badge-"],
+[class*=" badge-"] {
+  @apply bg-slate-800 py-1 px-4 text-sm font-bold rounded-2xl;
+}
+
+[class*="Tailwind"] {
+  @apply bg-pink-500;
+}
+
+[class*="Typescript"] {
+  @apply bg-blue-500;
+}
+
+[class*="Parcel"] {
+  @apply bg-green-500;
+}
+[class*="Cypress"] {
+  @apply bg-gray-500;
+}
+[class*="React"] {
+  @apply bg-blue-500;
+}
+[class*="Next"] {
+  @apply bg-black;
+}
+
+/* BADGES END */
+
+.logo-card {
+  @apply bg-gray-100 p-4 rounded-2xl;
 }

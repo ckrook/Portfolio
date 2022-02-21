@@ -1,50 +1,45 @@
+// IMPORTS
 import "./App.css";
-import todo from "./assets/todo.png";
-import weather from "./assets/weatherapp.png";
+import { Link } from "react-router-dom";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-      <header className="header">
-        <div className="wrap">
-          <span className="header__logo">Charles Krook</span>
-          <h1>Frontend Developer & Designer</h1>
-        </div>
-      </header>
+      <Header />
       <main>
-        <div className="wrap">
-          <div className="project">
-            <div className="project__img relative p-5 bg-green-300">
-              <img width="400px" src={todo} alt="Todo App" />
-            </div>
-            <div className="flex justify-between">
-              <div>
-                <h2 className="font-bold">Todo App</h2>
-                <span>Simple todo app built with vanilla js</span>
-              </div>
-              <div className="flex flex-col text-right">
-                <span>Live site</span>
-                <span>View Github repo</span>
-              </div>
-            </div>
-          </div>
-          <div className="project">
-            <div className="project__img bg-red-200">
-              <img width="400px" src={weather} alt="Todo App" />
-            </div>
-            <div className="flex justify-between">
-              <div>
-                <h2 className="font-bold">Weather App</h2>
-                <span>Weather app that showcases current & historic data</span>
-              </div>
-              <div className="flex flex-col text-right">
-                <span>Live site</span>
-                <span>View Github repo</span>
+        <section>
+          <div class="max-w-screen-xl px-4 py-24 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+              <h1 class="text-4xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
+                Hello! I'm Charles
+              </h1>
+              <div className="">
+                <p class="max-w-xl font-medium mx-auto mt-6 mb-4 text-lg">
+                  I'm a Frontend developer based in Stockholm, Sweden who loves
+                  to learn about new web technologies and bouldering with
+                  friends.
+                </p>
+
+                <a
+                  class="inline-block p-[2px] rounded-full bg-gradient-to-r from-rose-100 to-teal-100 hover:text-white active:text-opacity-75 focus:outline-none focus:ring"
+                  href="/download"
+                >
+                  <Link to="/about">
+                    <span class="block px-8 py-3 text-sm font-bold bg-slate-900 rounded-full hover:bg-transparent hover:text-gray-900">
+                      More about me
+                    </span>
+                  </Link>
+                </a>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <Projects />
       </main>
+      <Footer />
     </div>
   );
 }
