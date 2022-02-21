@@ -72,3 +72,7 @@ header {
 .logo-card {
   @apply bg-gray-100 p-4 rounded-2xl;
 }
+
+.sent {
+  @apply bg-green-400;
+}

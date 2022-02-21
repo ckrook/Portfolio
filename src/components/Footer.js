@@ -3,20 +3,20 @@ import resume from "./../assets/Resume.pdf";
 
 function Footer() {
   return (
-    <footer class="text-center">
-      <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto space-y-6">
-          <div class="flex justify-center space-x-6">
+    <footer className="text-center">
+      <div className="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="flex justify-center space-x-6">
             <a
-              class="text-blue-500 hover:text-opacity-75"
+              className="text-blue-500 hover:text-opacity-75"
               href="https://twitter.com/Charleskrook"
               target="_blank"
               rel="noreferrer"
             >
-              <span class="sr-only"> Twitter </span>
+              <span className="sr-only"> Twitter </span>
 
               <svg
-                class="w-8 h-8"
+                className="w-8 h-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -26,15 +26,15 @@ function Footer() {
             </a>
 
             <a
-              class="text-gray-100 hover:text-opacity-75"
+              className="text-gray-100 hover:text-opacity-75"
               href="https://github.com/ckrook"
               target="_blank"
               rel="noreferrer"
             >
-              <span class="sr-only"> GitHub </span>
+              <span className="sr-only"> GitHub </span>
 
               <svg
-                class="w-8 h-8"
+                className="w-8 h-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -48,15 +48,15 @@ function Footer() {
             </a>
 
             <a
-              class="text-pink-600 hover:text-opacity-75"
+              className="text-pink-600 hover:text-opacity-75"
               href="https://dribbble.com/charleskrook"
               target="_blank"
               rel="noreferrer"
             >
-              <span class="sr-only"> Dribbble </span>
+              <span className="sr-only"> Dribbble </span>
 
               <svg
-                class="w-8 h-8"
+                className="w-8 h-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -70,17 +70,20 @@ function Footer() {
             </a>
           </div>
 
-          <nav class="grid grid-cols-2 gap-4 p-6 text-sm font-medium bg-gray-900 rounded-lg sm:grid-cols-3 lg:grid-cols-6">
+          <nav className="grid grid-cols-2 gap-4 p-6 text-sm font-medium bg-gray-900 rounded-lg sm:grid-cols-3 lg:grid-cols-5">
             <a
-              class="hover:opacity-75"
+              className="hover:opacity-75"
               href="https://www.linkedin.com/in/charleskrook/"
               target="_blank"
               rel="noreferrer"
             >
-              Linkedin
+              Home
+            </a>
+            <a className="hover:opacity-75" href="/about">
+              About
             </a>
             <a
-              class="hover:opacity-75"
+              className="hover:opacity-75"
               href="https://github.com/ckrook"
               target="_blank"
               rel="noreferrer"
@@ -88,32 +91,22 @@ function Footer() {
               Github
             </a>
             <a
-              class="hover:opacity-75"
+              className="hover:opacity-75"
               href="https://www.linkedin.com/in/charleskrook/"
               target="_blank"
               rel="noreferrer"
             >
               Linkedin
             </a>
-            <a
-              class="hover:opacity-75"
-              href="mailto:charles.krook@gmail.com?subject=Hi! I just read your resume and would love to get some testimonials"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Testimonials
-            </a>
-            <a class="hover:opacity-75" href="">
-              About
-            </a>
-            <a class="hover:opacity-75" href={resume} download>
+
+            <a className="hover:opacity-75" href={resume} download>
               Resume
             </a>
           </nav>
-          <p class="max-w-lg mx-auto text-xs text-gray-500">
+          <p className="max-w-lg mx-auto text-xs text-gray-500">
             Lets talk over a coffee!
           </p>
-          <p class="text-xs font-medium">&copy; 2022 Charles Krook</p>
+          <p className="text-xs font-medium">&copy; 2022 Charles Krook</p>
         </div>
       </div>
     </footer>
