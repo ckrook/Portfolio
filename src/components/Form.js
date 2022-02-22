@@ -6,7 +6,7 @@ function Form() {
   const [sent, setSent] = useState(false);
   let button;
   if (sent) {
-    button = <IoIosCheckmark className="w-10 h-10" />;
+    button = <IoIosCheckmark className="w-7 h-7" />;
   } else {
     button = (
       <svg
@@ -55,29 +55,20 @@ function Form() {
     setSent(true);
   }
   return (
-    <section>
-      <div className="max-w-screen-xl px-4 pb-8 mx-auto sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-          <div className="lg:py-12 lg:col-span-2">
-            <p className="max-w-xl text-lg">
-              Now its time to hear more about what you do. <br />
-              Please do not hesitate to get in touch if you feel like we could
-              make something great together.
-            </p>
-
-            <div className="mt-8">
-              <a
-                href="tel:+46700230543"
-                className="text-2xl font-bold text-orange-600"
-              >
-                +46 70 023 05 43
-              </a>
-
-              <address className="mt-2 not-italic"></address>
+    <section name="contactme" id="contactme">
+      <div className="max-w-screen-xl pb-8 mx-auto">
+        <div className="grid grid-cols-1 gap-x-2 lg:grid-cols-7">
+          <div className="lg:col-span-7">
+            <div className="h-full">
+              <div class="h-full flex items-center bg-gray-900 rounded-xl">
+                <h5 class="mb-3 text-xl md:text-4xl lg:text-3xl font-bold text-gray-200">
+                  Lets talk!
+                </h5>
+              </div>
             </div>
           </div>
 
-          <div className="p-8 rounded-lg lg:p-12 lg:col-span-3">
+          <div className="rounded-lg lg:col-span-7">
             <form onSubmit={sendEmail} className="space-y-4">
               <div>
                 <label className="sr-only" for="name">
@@ -92,7 +83,7 @@ function Form() {
                 />
               </div>
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                 <div>
                   <label className="sr-only" for="email">
                     Email
@@ -120,36 +111,31 @@ function Form() {
                 </div>
               </div>
 
-              <div>
+              <div className="flex gap-4">
                 <label className="sr-only" for="message">
                   Message
                 </label>
                 <textarea
-                  className="w-full p-3 text-sm border-gray-200 bg-gray-800 rounded-lg"
+                  className=" p-3 text-sm border-gray-200 bg-gray-800 rounded-lg"
                   placeholder="Message"
                   rows="8"
+                  cols="120"
                   name="message"
                   id="message"
                 ></textarea>
               </div>
+              <button
+                type="submit"
+                className={
+                  sent
+                    ? "sent inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black rounded-lg sm:w-full"
+                    : "inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black rounded-lg sm:w-full"
+                }
+              >
+                <span className="font-medium">{sent ? "Sent!" : "Send"}</span>
 
-              <div className="mt-4">
-                <button
-                  type="submit"
-                  className={
-                    sent
-                      ? "sent inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black rounded-lg sm:w-auto"
-                      : "inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black rounded-lg sm:w-auto"
-                  }
-                >
-                  <span className="font-medium">
-                    {" "}
-                    {sent ? "Sent!" : "Send Enquiry"}{" "}
-                  </span>
-
-                  {button}
-                </button>
-              </div>
+                {button}
+              </button>
             </form>
           </div>
         </div>

@@ -6,9 +6,6 @@ import todologo from "./../assets/todo-logo.png";
 import weather from "./../assets/weatherapp.png";
 import weatherlogo from "./../assets/weather-logo.png";
 
-import { HiExternalLink } from "react-icons/hi";
-import { GoMarkGithub } from "react-icons/go";
-
 function Projects() {
   const projects = [
     {
@@ -35,57 +32,47 @@ function Projects() {
       {projects.map((p) => {
         return (
           <div className="project">
-            <div className="project__img">
-              <div className="flex justify-center items-center">
-                <img className=" w-4/5 p-4" src={p.logo} alt="Todo App" />
+            <a href={p.live} target="_blank" rel="noreferrer">
+              <div className="project__img">
+                <div className="flex justify-center items-center">
+                  <img className=" w-4/5 p-4" src={p.logo} alt="Todo App" />
+                </div>
+                <div>
+                  <img className="rounded-xl" src={p.img} alt="Todo App" />
+                </div>
               </div>
-              <div>
-                <img className="rounded-xl" src={p.img} alt="Todo App" />
-              </div>
-            </div>
+            </a>
 
             <div className="flex justify-between px-8">
               <div className="flex flex-col">
                 <div className="flex items-center mb-2">
-                  <h2 className="font-bold mr-4">{p.title}</h2>
-                  <HiExternalLink className=" sm:hidden w-7 h-7 md:w-6 md:h-6" />
-                  <span className="hidden md:block text-gray-300 font-medium leading-[32px]">
-                    {p.description}
-                  </span>
+                  <a href={p.live}>
+                    <h2 className="font-bold mr-4">{p.title}</h2>
+                  </a>
                 </div>
-                <div className="flex flex-wrap md:gap-2 lg:gap-3 xl:gap-4 gap-2 gap-y-3 ">
-                  {p.badge.map((b) => {
-                    const classes = "badge-";
-                    return <span className={classes}>{b}</span>;
-                  })}
-                </div>
+                <span className="text-gray-300 text-base font-medium leading-[22px]">
+                  {p.description}
+                </span>
               </div>
-              <div className="flex flex-row sm:flex-col md:justify-between text-right font-medium">
-                <div className="flex flex-row md:flex-auto justify-end md:items-center">
+              <div className="flex flex-col md:gap-2 lg:gap-3 xl:gap-4 gap-2">
+                <div className="flex justify-end">
                   <a
-                    className="hidden xl:block mr-2"
-                    href={p.live}
+                    href={p.repo}
+                    className="badge- github"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Live site
-                  </a>
-                  <a href={p.live} target="_blank" rel="noreferrer">
-                    <HiExternalLink className="hidden sm:block w-7 h-7 md:w-6 md:h-6" />
+                    View on Github
                   </a>
                 </div>
-                <div className="flex justify-end md:items-center">
-                  <a
-                    className="hidden xl:block mr-2"
-                    href={p.repo}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github repo
-                  </a>
-                  <a href={p.repo} target="_blank" rel="noreferrer">
-                    <GoMarkGithub className="w-7 h-7 md:w-6 md:h-6" />
-                  </a>
+                <div className="flex flex-wrap justify-end gap-1">
+                  {p.badge.map((b) => {
+                    return (
+                      <div>
+                        <span className="badge- ">{b}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

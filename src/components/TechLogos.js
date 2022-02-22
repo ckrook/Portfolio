@@ -12,11 +12,11 @@ import { default as ts } from "./../assets/logos/typescript.svg";
 
 function TechLogos() {
   return (
-    <section className="px-4 pt-24 pb-16 mx-auto max-w-7xl">
+    <section className="pt-24 pb-16 mx-auto max-w-7xl">
       <h1 className="mb-12 text-sm font-bold tracking-wide text-center text-gray-700 uppercase">
         Staying up to date with the latest technologies.
       </h1>
-      <div className="grid grid-cols-2 gap-6 text-center lg:grid-cols-8">
+      <div className="grid grid-cols-2 gap-6 text-center xl:grid-cols-8">
         <div className="logo-card flex items-center justify-center">
           <img
             src={window.location.origin + git}

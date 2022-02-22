@@ -10,10 +10,12 @@ export default function About() {
   return (
     <div>
       <Header />
-      <AboutDescription />
-      <TechLogos />
-      <Form />
-      <Footer />
+      <div className="wrap">
+        <AboutDescription />
+        <TechLogos />
+        <Form />
+        <Footer />
+      </div>
     </div>
   );
 }

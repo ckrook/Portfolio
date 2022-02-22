@@ -74,7 +74,10 @@ function Footer() {
             <a className="hover:opacity-75" href="/" rel="noreferrer">
               Home
             </a>
-            <a className="hover:opacity-75" href="/about">
+            <a
+              className="hover:opacity-75"
+              href={window.location.origin + "/about"}
+            >
               About
             </a>
 

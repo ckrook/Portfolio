@@ -3,11 +3,9 @@ import React from "react";
 function AboutDescription() {
   return (
     <section className="text-white bg-gray-900">
-      <div className="max-w-screen-xl px-4 pt-8 sm:px-6 lg:px-8 m-auto">
-        <div className="flex flex-row lg:flex-nowrap flex-wrap max-w-screen-xl gap-10">
+      <div className="max-w-screen-xl m-auto">
+        <div className="flex  flex-col-reverse flex-wrap max-w-screen-xl gap-10">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-bold sm:text-4xl">About</h2>
-
             <p className="mt-6 text-gray-300">
               Hey! I'm Charles Krook, a junior Front-End Developer in Stockholm
               who is currently studying Front-end Development at Medieinstitutet
@@ -39,8 +37,8 @@ function AboutDescription() {
             </p>
           </div>
           <img
-            className="w-full h-full"
-            src="https://via.placeholder.com/550x663"
+            className="w-full h-full rounded-xl"
+            src="https://via.placeholder.com/550x363"
             alt="Charles Krook"
           />
         </div>
