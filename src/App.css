@@ -49,7 +49,7 @@ header {
 
 [class^="badge-"],
 [class*=" badge-"] {
-  @apply bg-slate-800 py-1 px-4 sm:text-sm font-bold rounded-2xl text-xs;
+  @apply bg-slate-800 py-1 px-4 font-bold rounded-2xl text-xs;
 }
 
 .github {

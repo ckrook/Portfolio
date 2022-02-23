@@ -14,8 +14,8 @@ export default function About() {
         <AboutDescription />
         <TechLogos />
         <Form />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

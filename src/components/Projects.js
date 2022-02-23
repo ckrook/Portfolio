@@ -10,19 +10,20 @@ function Projects() {
   const projects = [
     {
       title: "Todo App",
-      description: "Simple todo app built with vanilla js",
+      description: "A minimalistic todo app with some lightweight features.",
       logo: todologo,
       img: todo,
-      badge: ["Typescript", "TailwindCSS", "Parcel", "Cypress"],
+      badge: ["Typescript", "Parcel", "Tailwind", "Cypress"],
       live: "https://todo.charleskrook.io/",
       repo: "https://github.com/ckrook/TodoApp",
     },
     {
       title: "Weather App",
-      description: "Shows current & historic weather data",
+      description:
+        "Simple weather app that is showcasing the current temperature, humidity, clouds and 7 days forecast.",
       logo: weatherlogo,
       img: weather,
-      badge: ["React", "NextJS", "TailwindCSS", "FramerMotion"],
+      badge: ["React", "NextJS", "API", "Tailwind", "FramerMotion"],
       live: "https://weatherapp-next.vercel.app/",
       repo: "https://github.com/ckrook/WeatherApp",
     },
@@ -43,29 +44,37 @@ function Projects() {
               </div>
             </a>
 
-            <div className="flex justify-between px-8">
+            <div className="flex flex-col sm:flex-row justify-start sm:justify-between px-4 sm:px-8">
               <div className="flex flex-col">
-                <div className="flex items-center mb-2">
+                <div className="flex items-center justify-between mb-2">
                   <a href={p.live}>
                     <h2 className="font-bold mr-4">{p.title}</h2>
                   </a>
-                </div>
-                <span className="text-gray-300 text-base font-medium leading-[22px]">
-                  {p.description}
-                </span>
-              </div>
-              <div className="flex flex-col md:gap-2 lg:gap-3 xl:gap-4 gap-2">
-                <div className="flex justify-end">
                   <a
                     href={p.repo}
-                    className="badge- github"
+                    className="badge- github block sm:hidden"
                     target="_blank"
                     rel="noreferrer"
                   >
                     View on Github
                   </a>
                 </div>
-                <div className="flex flex-wrap justify-end gap-1">
+                <span className="text-gray-300 text-base font-medium leading-[22px] mb-2 sm:mb-0">
+                  {p.description}
+                </span>
+              </div>
+              <div className="flex flex-col md:gap-2 lg:gap-3 xl:gap-4 gap-2">
+                <div className="flex justify-start sm:justify-end">
+                  <a
+                    href={p.repo}
+                    className="badge- github hidden sm:block"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View on Github
+                  </a>
+                </div>
+                <div className="flex flex-wrap justify-start sm:justify-end gap-1">
                   {p.badge.map((b) => {
                     return (
                       <div>
