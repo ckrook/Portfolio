@@ -6,8 +6,20 @@ import todologo from "./../assets/todo-logo.png";
 import weather from "./../assets/weatherapp.png";
 import weatherlogo from "./../assets/weather-logo.png";
 
+import digitalaverk from "./../assets/digitalaverk.png";
+import digitalaverk2 from "./../assets/digitalaverk2.png";
+
 function Projects() {
   const projects = [
+    {
+      title: "Digitalaverk",
+      description: "A swedish NFT marketplace where digital art can be minted.",
+      logo: digitalaverk,
+      img: digitalaverk2,
+      badge: ["Typescript", "NextJS", "Sanity", "Thirdweb", "Tailwind"],
+      live: "https://nft-drop-p671mbzgg-ckrook.vercel.app/",
+      repo: "https://github.com/ckrook/Digitalaverk",
+    },
     {
       title: "Todo App",
       description: "A minimalistic todo app with some lightweight features.",

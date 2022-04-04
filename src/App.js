@@ -13,7 +13,7 @@ function App() {
         <section>
           <div className="max-w-screen-xl px-4 py-24 mx-auto sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl font-extrabold text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
+              <h1 className="text-4xl font-extrabold text-white sm:text-6xl">
                 Hello! I'm Charles
               </h1>
               <div>
