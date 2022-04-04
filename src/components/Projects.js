@@ -47,10 +47,10 @@ function Projects() {
           <div className="project">
             <a href={p.live} target="_blank" rel="noreferrer">
               <div className="project__img">
-                <div className="flex justify-center items-center">
+                <div className="flex flex-1 justify-center items-center">
                   <img className=" w-4/5 p-4" src={p.logo} alt="Todo App" />
                 </div>
-                <div>
+                <div className="flex-1">
                   <img className="rounded-xl" src={p.img} alt="Todo App" />
                 </div>
               </div>
