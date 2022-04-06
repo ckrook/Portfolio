@@ -6,11 +6,32 @@ import todologo from "./../assets/todo-logo.png";
 import weather from "./../assets/weatherapp.png";
 import weatherlogo from "./../assets/weather-logo.png";
 
+// DIGITALA VERK
 import digitalaverk from "./../assets/digitalaverk.png";
 import digitalaverk2 from "./../assets/digitalaverk2.png";
 
+// MESSAGE APP
+import messageApp from "./../assets/message-app.png";
+import messageAppLogo from "./../assets/message-app-logo.png";
+
 function Projects() {
   const projects = [
+    {
+      title: "Message App",
+      description:
+        "A simple message app built with NextJS, Firebase, tailwind & styled componets",
+      logo: messageAppLogo,
+      img: messageApp,
+      badge: [
+        "Typescript",
+        "NextJS",
+        "Firebase",
+        "Tailwind",
+        "styled components",
+      ],
+      live: "https://message-app-beta.vercel.app/",
+      repo: "https://github.com/ckrook/Message-app",
+    },
     {
       title: "Digitalaverk",
       description: "A swedish NFT marketplace where digital art can be minted.",

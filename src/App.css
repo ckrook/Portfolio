@@ -14,7 +14,7 @@ body {
   @apply bg-gray-900 text-white text-xl;
 }
 .wrap {
-  @apply w-[95%] sm:w-[90%] md:w-[85%] md:max-w-6xl lg:w-[65%] xl:w-[45%] m-auto;
+  @apply w-[95%] sm:w-[90%] md:w-[85%] md:max-w-6xl lg:w-[65%] xl:w-[55%] m-auto;
 }
 .blur-bg {
   backdrop-filter: blur(6px);
