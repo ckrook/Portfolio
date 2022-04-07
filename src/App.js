@@ -11,8 +11,8 @@ function App() {
       <Header />
       <main>
         <section>
-          <div className="max-w-screen-xl px-4 py-24 mx-auto sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-screen-xl px-4 py-24 md:py-24 mx-auto sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto text-center lg:mb-8">
               <h1 className="text-4xl font-semibold text-white sm:text-5xl">
                 Hello! I'm Charles
               </h1>
@@ -23,10 +23,15 @@ function App() {
                 </p>
 
                 <div className="inline-block p-[2px] bg-green-500 text-white rounded-full active:text-opacity-75 focus:outline-none focus:ring">
-                  <Link to="/about">
-                    <span className="tracking-wider block px-8 py-3 text-sm font-bold rounded-full hover:bg-transparent uppercase">
-                      Get in touch!
-                    </span>
+                  <Link
+                    to="#"
+                    onClick={(e) => {
+                      window.location.href = "mailto:charles.krook@gmail.com";
+                      e.preventDefault();
+                    }}
+                    className="tracking-wider block px-8 py-3 text-sm font-bold rounded-full hover:bg-transparent uppercase"
+                  >
+                    Get in touch!
                   </Link>
                 </div>
               </div>

@@ -24,7 +24,7 @@ body {
   height: 100%;
 }
 header {
-  @apply text-center my-10;
+  @apply text-center mt-10 lg:mb-10;
 }
 
 .header__logo {
