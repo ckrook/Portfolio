@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import avatar from "./../assets/avatar.png";
-import { BiPaperPlane } from "react-icons/bi";
 
 import resume from "./../assets/Resume.pdf";
 function Header() {

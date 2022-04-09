@@ -38,7 +38,7 @@ function Projects() {
       logo: digitalaverk,
       img: digitalaverk2,
       badge: ["Typescript", "NextJS", "Sanity", "Thirdweb", "Tailwind"],
-      live: "https://nft-drop-p671mbzgg-ckrook.vercel.app/",
+      live: "https://nft-drop-blue.vercel.app/",
       repo: "https://github.com/ckrook/Digitalaverk",
     },
     {
